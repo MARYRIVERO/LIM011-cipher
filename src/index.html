@@ -6,8 +6,126 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+    <header class="divEnc"></header>
+    
+    <main id="root">
+      
+     <!-- Primera vista -->
+
+      <section id="firstView" class="divInicio" >
+          <div align ="center" class="box1">
+            <p class= "p">
+              El presente Censo tiene como objeto recolectar datos.
+            </p>
+
+            <p class= "p">
+                Por motivos de Seguridad y confidencialidad 
+                le solicitamos un numero del 1 al 9 para una
+                Clave de cifrado.
+            </p>
+            <input type= "number" id= "parameter" min="1" max="9" value=""/>
+          </div>
+           <div align ="center" class="boxBtn">
+             <button type="button" id="btn" class="btnPink" >Ingrese el dígito</button>
+           </div>
+
+      </section>
+
+    <!-- Segunda vista --> 
+
+    <section id= "secondView" class= "divInicio ocultar">
+      <div align ="center" class= "box1"
+        <form aling= center > 
+          <h1 class="p">Ingrese sus datos </h1>
+          <div class="group">
+            <label for="dato">Nombres y Apellidos</label>
+            <input type="text"  id="fullName" class="inputTex" value="">
+          </div>
+          <div  class="group">
+            <label for="dato">Documento de identificación</label>
+            <input type="text"  id="numberIdentity" class="inputTex" value="">
+          </div>
+          <div  class="group">
+            <label for="dato">Dirección actual</label>
+            <input type="text"  id="address" class="inputTex" value="">
+          </div>
+          <div  class="group">
+            <label for="dato">Numero de Contacto</label>
+            <input type="text"  id="phone" class="inputTex" value="" >
+          </div>
+        </form>
+      </div>
+      <div align ="center" class="boxBtn">
+      <button  type="button" id= "twoBtn" class="btnPink">Encriptar</button>
+      </div>
+    </section> 
+
+       <!-- Tercera vista --> 
+      <section id= "thirdView" class= "divInicio ocultar">
+        <div align ="center" class= "box1">
+  
+          <form aling= center > 
+            <h1 class="p">Sus datos han sido encriptados satisfactoriamente </h1>
+            <div class="group">
+            <label for="dato">Nombres y Apellidos</label>
+            <input type="text"  id="fullNameRes"class="inputTex" >
+          </div>
+          <div class="group">
+            <label for="dato">Documento de identificación</label>
+            <input type="text"  id="numberIdentityRes" class="inputTex" >
+          </div>
+          <div class="group">
+            <label for="dato">Dirección actual</label>
+            <input type="text"  id="addressRes" class="inputTex" >
+          </div>
+          <div class="group">
+            <label for="dato">Numero de Contacto</label>
+            <input type="text"  id="phoneRes" class="inputTex" >
+          </div>
+        </div>
+
+        <div align ="center" class="boxBtn">
+            <button  type="button" id="threeBtn" class="btnPink">Desencriptar</button>
+        </div>
+        </form>
+
+        </div>
+      </section> 
+
+ <!-- Cuarta vista --> 
+
+      <section id= "quarterView" class="divInicio ocultar"> 
+        <div align ="center" class= "box1">
+          <form aling= "center" > 
+            <h1 class="p">Desencriptado realizado correctamente </h1>
+            <div class="group">
+              <label for="dato">Nombres y Apellidos</label>
+              <input type="text"  id="fullNameDecode" class="inputTex" >
+            </div>
+            <div class="group">
+              <label for="dato">Documento de identificación</label>
+              <input type="text"  id="numberIdentityDecode" class="inputTex" >
+            </div>
+            <div class="group">
+              <label for="dato">Dirección actual</label>
+              <input type="text"  id="addressDecode" class="inputTex" >
+            </div>
+            <div class="group">
+              <label for="dato">Numero de Contacto</label>
+              <input type="text"  id="phoneDecode" class="inputTex" >
+            </div>
+          </div>
+          <div  align ="center" class="boxBtn">
+            <button  type="button" id="quarterBtn" class="btnPink">Volver a Inicio</button>
+          </div>
+        </form>
+      </section> 
+
+
+    </main>
+      <br>
+      <br>
+    <footer align ="center" class= "main-footer">Desarrollado por Marilyn Rivero</footer>
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>

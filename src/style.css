@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    padding:0;
+    background: #7DE9FF;
+    font-family: 'Arial';
+    color: #FFF;
+ }
+ .ocultar{
+     display: none;
+ }
+ .mostrar{  
+     display: block;
+ }
+ 
+ .divEnc {
+     background: url("image/integracion.jpg" );
+     background-size: contain;
+     height: 120px;
+     width: 100%;
+     margin: 0 auto;
+ }
+ 
+ .divInicio {
+     height: 55vh;
+     width: 100%;
+     margin: 0;
+ }
+ 
+ .box1 {
+     background: #FF64AB;
+     height:auto;
+     width:350px;
+     padding:15px;
+     border-radius: 20px;
+     margin:70px  auto 0 auto;
+ }
+ 
+ .boxBtn{
+ 
+     width:350px;
+     padding:7px;
+     margin:0 auto; 
+ }
+ 
+ .btnPink{
+     background: #FF64AB;
+     height:60;
+     width:auto;
+     padding:9px;
+     border-radius: 20px;
+     color:#FFF;
+ }
+ 
+ .p{
+     color:#FFF;
+     font-size: 16px;
+     text-align:center;
+ }
+ .main-footer{
+     color:#000;
+ }
+ label{
+     display: inline-block;
+     width: 160px;
+     font-size:14px;
+    
+ }
+ .inputTex{
+     margin-left:1%;
+     width:150px;
+     margin-bottom:15px;
+ }
+ 
+ .group{
+     display: block;
+     margin: 0;
+     padding: 0;
+ }
