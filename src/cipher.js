@@ -1,5 +1,5 @@
 window.cipher = {
-  encode(myString, param) {
+  encode:(myString, param)=> {
     let encriptado = "";
     param = parseInt(param) 
 
@@ -13,7 +13,7 @@ window.cipher = {
       encriptado += newLetter // formar el string cifrado
     
      }else if (numberOfTheLetter >= 97 && numberOfTheLetter <=122) { // valor UNICODE de letras minúsculas en ASCII
-       formule = ( numberOfTheLetter - 97 + param) % 26 + 97; // fórmula de cifrado Cesar
+       const formule = ( numberOfTheLetter - 97 + param) % 26 + 97; // fórmula de cifrado Cesar
        let newLetter = String.fromCharCode(formule); // valor de letra cifrada
        encriptado += newLetter; // formar el string cifrado
 
@@ -21,7 +21,7 @@ window.cipher = {
        encriptado += ' ';  // añadir espacio en string cifrado
 
      }else if((numberOfTheLetter >= 48 && numberOfTheLetter <=57)){ // valor UNICODE de números en ASCII
-      formule = ( numberOfTheLetter - 48 + param) % 10 + 48; // fórmula de cifrado Cesar
+      const formule = ( numberOfTheLetter - 48 + param) % 10 + 48; // fórmula de cifrado Cesar
       let newLetter = String.fromCharCode(formule); // valor de letra cifrada
       encriptado += newLetter; // formar el string cifrado
        
@@ -31,13 +31,13 @@ window.cipher = {
     return encriptado;   // Retorna el valor de la cadena cifrada
   },
 
- decode(myString, param) {
+ decode:(myString, param)=> {
   let desencriptado = "";
   param = parseInt(param) 
 
    for (let index = 0; index < myString.length; index++) {   //recorrer el string del usuario
       let numberOfTheLetter = myString.charCodeAt(index);  //valor UNICODE de la letra en el código ASCII
-      console.log(numberOfTheLetter)
+     
 
       if (numberOfTheLetter >= 65 && numberOfTheLetter <= 90){  //saber si la letra está en mayúscula
        
@@ -49,8 +49,8 @@ window.cipher = {
       }else if (numberOfTheLetter >= 97 && numberOfTheLetter <=122){ // saber si la letra está en minúscula
         
 
-        formule = ( numberOfTheLetter + 85 - param) % 26 + 97; // formula para descifrar
-        theNewLetter = String.fromCharCode(formule); // obtener el valor de la letra descifrada
+        const formule = ( numberOfTheLetter + 85 - param) % 26 + 97; // formula para descifrar
+        let theNewLetter = String.fromCharCode(formule); // obtener el valor de la letra descifrada
         desencriptado += theNewLetter; // formar la cadena descifrada
         
  
@@ -60,8 +60,8 @@ window.cipher = {
 
       } else if((numberOfTheLetter >= 48 && numberOfTheLetter <=57)){ // valor UNICODE de números en ASCII
        
-          formule = ( numberOfTheLetter + 52 - param) % 10 + 48; // fórmula de cifrado Cesar
-          newLetter = String.fromCharCode(formule); // valor de letra cifrada
+          const formule = ( numberOfTheLetter + 52 - param) % 10 + 48; // fórmula de cifrado Cesar
+          let newLetter = String.fromCharCode(formule); // valor de letra cifrada
           desencriptado += newLetter; // formar el string cifrado
       } else {
        

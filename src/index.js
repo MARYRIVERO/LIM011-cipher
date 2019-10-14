@@ -73,6 +73,7 @@ threeBtn.addEventListener('click', () => {
 });
 
 //Dando funcionalidad a mi cuarto botón
+const quarterBtn = document.getElementById("quarterBtn");
 quarterBtn.addEventListener('click', () => {
 
   firstView.classList.remove("ocultar");
