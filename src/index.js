@@ -86,7 +86,7 @@ quarterBtn.addEventListener('click', () => {
   retornarDatos.value= "";
   const retornarDocument=document.querySelector('input[id="numberIdentity"]');
   retornarDocument.value= "";
-  const retornarAdress=document.querySelector('input[id="address" ]');
+  const retornarAdress=document.querySelector('input[id="address"]');
   retornarAdress.value= "";
   const retornarPhone=document.querySelector('input[id= "phone"]');
   retornarPhone.value= "";

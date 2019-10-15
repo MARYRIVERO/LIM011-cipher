@@ -27,7 +27,6 @@ describe('cipher', () => {
     // [Español]
     // Si decides implementar soporte para caracteres no alfabéticos descomenta
     // el test a continuación.
-    //
     it('debería retornar "3456789012" para "0123456789" with offset 33', () => {
       expect(cipher.encode('0123456789', 33)).toBe('3456789012');
     });
@@ -50,8 +49,6 @@ describe('cipher', () => {
     // [Español]
     // Si decides agregar soporte para minúsculas descomenta el test a
     // continuación.
-    //
-    //
     it('debería retornar "abcdefghijklmnopqrstuvwxyz" para "hijklmnopqrstuvwxyzabcdefg" with offset 33', () => {
        expect(cipher.decode('hijklmnopqrstuvwxyzabcdefg', 33)).toBe('abcdefghijklmnopqrstuvwxyz');
      });
@@ -61,15 +58,13 @@ describe('cipher', () => {
     // [Español]
     // Si decides implementar soporte para caracteres no alfabéticos descomenta
     // el test a continuación.
-    //
-    //
     it('debería retornar "0123456789" para "3456789012" with offset 33', () => {
       expect(cipher.decode('3456789012', 33)).toBe('0123456789');
     });
 
     it('debería retornar " " para " "', () => {
       expect(cipher.decode(" ", 33)).toBe(" ");
-    // });
+
   });
 });
 });

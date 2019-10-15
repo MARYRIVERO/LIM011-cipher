@@ -13,7 +13,7 @@ body{
  }
  
  .divEnc {
-     background: url("image/integracion.jpg" );
+     background: url("image/integracion.jpg");
      background-size: contain;
      height: 120px;
      width: 100%;
