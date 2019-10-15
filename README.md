@@ -2,7 +2,7 @@
 
 Es una aplicación desarrolada con el objeto de brindar al usuario el resguardo de información a través de un cifrado de letras y numeros; en el caso de realizar Censos y/o actualizalización de datos.
 
-  ###La imagen final del proyecto
+  ### La imagen final del proyecto
 Se elaboró con Figma el siguiente prototipo
 ![Imagen](img/vista1.png)
 ![Imagen](img/vista2.png)
@@ -19,7 +19,7 @@ Se elaboró con Figma el siguiente prototipo
   "Cifrado de datos" es una aplicación web en la que el usuario escoge un desplazamiento del 1 al 9, en donde cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones
   (desplazamiento) más adelante en el mismo alfabeto.  Uno de los grandes miedos de la población es el manejo de la información que suministran, por lo que el proyecto "Cifrado de datos" le permite a sus usuarios tener la tranquilidad de que la información que han dado, se verán reflejados pero de forma encriptada.
     
-### foto del primer prototipo en papel
+### Foto del primer prototipo en papel
 ![Imagen](img/prototipo_papel.jpg)
 ![Imagen](img/prototipo_papel2.jpg)
 
