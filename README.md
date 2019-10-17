@@ -4,7 +4,7 @@ Es una aplicación desarrolada con el objeto de brindar al usuario el resguardo 
 
   ### La imagen final del proyecto
 Se elaboró con Figma el siguiente prototipo
-![Imagen](img/vista1.png)
+![Imagen](img/vistauno.png)
 
 ![Imagen](img/vistaDos.png)
 
@@ -39,7 +39,7 @@ Se elaboró con Figma el siguiente prototipo
 
 
 ### Imagen del prototipo final.
-![Imagen](uno.png)
+![Imagen](imag/vista1.png)
 
 ![Imagen](img/vista2.png)
 
