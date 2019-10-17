@@ -1,23 +1,20 @@
 window.cipher = {
-  encode:(myString, parameter)=> {
-    parameter = parseInt(parameter);
-    let numberOfTheLetter = "";
-    let formule = "";
-    let newLetter="";
-    let encriptado = "";
-
-
-  for (let index = 0; index < myString.length; index++) { // recorrer el string 
-     
+  encode: (myString, parameter) => {
+    const offset = parseInt(parameter, 10);
+    let numberOfTheLetter = '';
+    let formule = '';
+    let newLetter = '';
+    let encriptado = '';
+    for (let index = 0; index < myString.length; index += 1) {
       numberOfTheLetter = myString.charCodeAt(index) //numero de la letra en el codigo ASCII
 
       if (numberOfTheLetter >= 65 && numberOfTheLetter <= 90) { 
-      formule =  (numberOfTheLetter - 65 + parameter) % 26 + 65; //almacena fórmula de cifrado que se utiliza
+      formule =  (numberOfTheLetter - 65 + offset) % 26 + 65; //almacena fórmula de cifrado que se utiliza
       newLetter= String.fromCharCode(formule); // almacena valor de la nueva letra cifrada
       encriptado += newLetter // formar el string cifrado
     
      }else if (numberOfTheLetter >= 97 && numberOfTheLetter <=122) { // valor UNICODE de letras minúsculas en ASCII
-      formule = (numberOfTheLetter - 97 + parameter) % 26 + 97; // fórmula de cifrado Cesar
+      formule = (numberOfTheLetter - 97 + offset) % 26 + 97; // fórmula de cifrado Cesar
       newLetter = String.fromCharCode(formule); // valor de letra cifrada
       encriptado += newLetter; // formar el string cifrado
 
@@ -25,7 +22,7 @@ window.cipher = {
        encriptado += ' ';  // añadir espacio en string cifrado
 
      }else if(numberOfTheLetter >= 48 && numberOfTheLetter <=57){ // valor UNICODE de números en ASCII
-      formule = (numberOfTheLetter - 48 + parameter) % 10 + 48; // fórmula de cifrado Cesar
+      formule = (numberOfTheLetter - 48 + offset) % 10 + 48; // fórmula de cifrado Cesar
       newLetter = String.fromCharCode(formule); // valor de letra cifrada
       encriptado += newLetter; // formar el string cifrado
        
