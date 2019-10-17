@@ -5,8 +5,11 @@ Es una aplicación desarrolada con el objeto de brindar al usuario el resguardo 
   ### La imagen final del proyecto
 Se elaboró con Figma el siguiente prototipo
 ![Imagen](img/vista1.png)
+
 ![Imagen](img/vistaDos.png)
+
 ![Imagen](img/vistaTres.png)
+
 ![Imagen](img/vistaCuatro.png)
 
 
@@ -22,6 +25,7 @@ Se elaboró con Figma el siguiente prototipo
     
 ### Foto del primer prototipo en papel
 ![Imagen](img/prototipo_papel.jpg)
+
 ![Imagen](img/prototipo_papel2.jpg)
 
 ### Resumen del feedback recibido indicando las mejoras a realizar:
@@ -36,8 +40,11 @@ Se elaboró con Figma el siguiente prototipo
 
 ### Imagen del prototipo final.
 ![Imagen](uno.png)
+
 ![Imagen](img/vista2.png)
+
 ![Imagen](img/vista3.png)
+
 ![Imagen](img/vista4.png)
 ## Objetivos de aprendizaje Cipher
 
