@@ -13,7 +13,7 @@ btn.addEventListener('click', () => {
   firstView.classList.add("ocultar");
  
 });
-
+//Declarando variables para Segunda vista//
 const twoBtn = document.getElementById("twoBtn");
 const thirdView = document.getElementById("thirdView");
 
@@ -24,6 +24,8 @@ twoBtn.addEventListener('click', () => {
   const numberIdentity= document.getElementById("numberIdentity").value;
   const address= document.getElementById("address").value;
   const phone= document.getElementById("phone").value;
+
+  //invocando a la función//
 
   const fullNameCripter= window.cipher.encode(fullName,parameter);
   document.getElementById("fullNameRes").value = fullNameCripter;
@@ -37,13 +39,12 @@ twoBtn.addEventListener('click', () => {
   const phoneCripter= window.cipher.encode(phone,parameter);
   document.getElementById("phoneRes").value = phoneCripter;
 
-
   //Mostrando y ocultando pantallas
 
   thirdView.classList.remove("ocultar");
   secondView.classList.add("ocultar");
   });
-
+//Declarando variables para tercera vista//
 const threeBtn = document.getElementById("threeBtn");
 const quarterView = document.getElementById("quarterView");
 
