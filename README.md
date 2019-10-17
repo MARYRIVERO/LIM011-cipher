@@ -5,9 +5,10 @@ Es una aplicación desarrolada con el objeto de brindar al usuario el resguardo 
   ### La imagen final del proyecto
 Se elaboró con Figma el siguiente prototipo
 ![Imagen](img/vista1.png)
-![Imagen](img/vista2.png)
-![Imagen](img/vista3.png)
-![Imagen](img/vista4.png)
+![Imagen](img/vistaDos.png)
+![Imagen](img/vistaTres.png)
+![Imagen](img/vistaCuatro.png)
+
 
 ## Investigación UX:
 
@@ -34,10 +35,10 @@ Se elaboró con Figma el siguiente prototipo
 
 
 ### Imagen del prototipo final.
-![Imagen](img/vistaUno.png)
-![Imagen](img/vistaDos.png)
-![Imagen](img/vistaTres.png)
-![Imagen](img/vistaCuatro.png)
+![Imagen](uno.png)
+![Imagen](img/vista2.png)
+![Imagen](img/vista3.png)
+![Imagen](img/vista4.png)
 ## Objetivos de aprendizaje Cipher
 
 A continuación te presentamos los objetivos de aprendizaje de este proyecto. Reflexiona y luego marca los objetivos que has llegado a **entender** y **aplicar** en tu proyecto.
