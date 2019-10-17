@@ -66,7 +66,7 @@ A continuación te presentamos los objetivos de aprendizaje de este proyecto. Re
 - [X] Manipulación de strings.
 - [ ] Uso de condicionales (if-else | switch).
 - [ ] Uso de bucles (for | do-while).	
-- [X] Uso de funciones (parámetros | argumentos | valor de retorno).
+- [ ] Uso de funciones (parámetros | argumentos | valor de retorno).
 - [X] Declaración correcta de variables (const & let).
 
 ### Testing
