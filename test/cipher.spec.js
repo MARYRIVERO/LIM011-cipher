@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 global.window = global;
 require('../src/cipher');
 
@@ -7,10 +8,11 @@ describe('cipher', () => {
   });
   describe('cipher.encode', () => {
     it('debería ser una función', () => {
+      // eslint-disable-next-line no-undef
       expect(typeof cipher.encode).toBe('function');
     });
     it('debería retornar "HIJKLMNOPQRSTUVWXYZABCDEFG" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 33', () => {
-      expect(cipher.encode("ABCDEFGHIJKLMNOPQRSTUVWXYZ", 33)).toBe("HIJKLMNOPQRSTUVWXYZABCDEFG");
+      expect(cipher.encode('ABCDEFGHIJKLMNOPQRSTUVWXYZ', 33)).toBe('HIJKLMNOPQRSTUVWXYZABCDEFG');
     });
     // Hacker edition
     //
@@ -33,15 +35,15 @@ describe('cipher', () => {
 
 
     it('debería retornar " !@" para " !@"', () => {
-       expect(cipher.encode(" ", 33)).toBe(" ");
-   });
-  })
-   describe('cipher.decode', () => {
-   it('debería ser una función', () => {
-    expect(typeof cipher.decode).toBe('function');
+      expect(cipher.encode(' ', 33)).toBe(' ');
+    });
+  });
+  describe('cipher.decode', () => {
+    it('debería ser una función', () => {
+      expect(typeof cipher.decode).toBe('function');
     });
     it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "HIJKLMNOPQRSTUVWXYZABCDEFG" con offset 33', () => {
-      expect(cipher.decode("HIJKLMNOPQRSTUVWXYZABCDEFG", 33)).toBe("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+      expect(cipher.decode('HIJKLMNOPQRSTUVWXYZABCDEFG', 33)).toBe('ABCDEFGHIJKLMNOPQRSTUVWXYZ');
     });
     //
     // Hacker edition
@@ -50,9 +52,9 @@ describe('cipher', () => {
     // Si decides agregar soporte para minúsculas descomenta el test a
     // continuación.
     it('debería retornar "abcdefghijklmnopqrstuvwxyz" para "hijklmnopqrstuvwxyzabcdefg" with offset 33', () => {
-       expect(cipher.decode('hijklmnopqrstuvwxyzabcdefg', 33)).toBe('abcdefghijklmnopqrstuvwxyz');
-     });
- 
+      expect(cipher.decode('hijklmnopqrstuvwxyzabcdefg', 33)).toBe('abcdefghijklmnopqrstuvwxyz');
+    });
+
     // Hacker edition
     //
     // [Español]
@@ -63,8 +65,7 @@ describe('cipher', () => {
     });
 
     it('debería retornar " " para " "', () => {
-      expect(cipher.decode(" ", 33)).toBe(" ");
-
+      expect(cipher.decode(' ', 33)).toBe(' ');
+    });
   });
-});
 });
