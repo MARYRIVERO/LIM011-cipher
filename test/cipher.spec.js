@@ -34,7 +34,7 @@ describe('cipher', () => {
     });
 
 
-    it('debería retornar " !@" para " !@"', () => {
+    it('debería retornar " " para " "', () => {
       expect(cipher.encode(' ', 33)).toBe(' ');
     });
   });
